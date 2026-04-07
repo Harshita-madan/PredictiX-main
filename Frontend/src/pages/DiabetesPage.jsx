@@ -45,7 +45,7 @@ const DiabetesPage = () => {
 
       try {
         const response = await fetch(
-          "http://localhost:8080/api/pdf/diabetes-scraper",
+          "http://localhost:8080/api/pdf/diabetes-scraper", "http://predictix-main.onrender.com/api/pdf/diabetes-scraper",
           {
             method: "POST",
             body: formData,
@@ -86,7 +86,7 @@ const DiabetesPage = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/predict/diabetes-pred",
+        "http://localhost:8080/api/v1/predict/diabetes-pred","http://predictix-main.onrender.com/api/v1/predict/diabetes-pred",
         {
           method: "POST",
           headers: {
