@@ -36,6 +36,10 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // Routes declaration
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/predict", predRouter);
 app.use("/api/pdf", pdfRouter);// Add this line to include the new PDF routes
