@@ -51,10 +51,10 @@ function SignupPage() {
       toast.error("Password must be at least 6 characters long");
       return;
     }
-
+//"http://localhost:8080/api/v1/users/register", 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/users/register", "http://predictix-main.onrender.com/api/v1/users/register",
+        "http://predictix-main.onrender.com/api/v1/users/register",
         {
           method: "POST",
           body: JSON.stringify({

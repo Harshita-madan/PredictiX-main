@@ -58,7 +58,7 @@ const BreastPage = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/predict/breast-pred", "http://predictix-main.onrender.com/api/v1/predict/breast-pred",
+         "http://predictix-main.onrender.com/api/v1/predict/breast-pred",
         {
           method: "POST",
           body: formDataToSend,

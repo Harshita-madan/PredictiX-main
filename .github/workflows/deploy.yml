@@ -1,0 +1,27 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install backend dependencies
+        run: |
+          cd Backend
+          npm install
+
+      - name: Install frontend dependencies
+        run: |
+          cd Frontend
+          npm install
+
+      - name: Build frontend
+        run: |
+          cd Frontend
+          npm run build
