@@ -53,6 +53,7 @@ function SignupPage() {
     }
 //"http://localhost:8080/api/v1/users/register", 
     try {
+      console.log("API URL:", "https://predictix-main.onrender.com/api/v1/users/register");
       const response = await fetch(
         "http://predictix-main.onrender.com/api/v1/users/register",
         {
