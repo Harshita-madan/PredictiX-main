@@ -8,7 +8,8 @@
     "server": "nodemon -r dotenv/config --experimental-json-modules index.js",
     "client": "npm run dev --prefix ../Frontend",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "vite build"
   },
   "author": "Rhitam Chaudhury",
   "license": "ISC",
